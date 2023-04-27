@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- メタデータ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ビューポート（スマホ版対応） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- サイトのタイトル -->
+    <title>菊池&nbsp;悠のポートフォリオサイト</title>
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/works.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <link rel="stylesheet" href="./css/toppage.css">
+
+    <!-- Webフォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- アイコンフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuary用ソース -->
+    <script src="./js/jquery-3.6.3.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header id="header" class="header flex">
+            <a href="./index.html"><img class="logo-img" src="./images/logo.png" alt="サイトロゴ"></a>
+            <nav class="header-gnav">
+
+                <!-- グローバルナビゲーションのメニュー -->
+                <ul class="gnav-menu">
+                    <li><a href="./about/index.html">About</a></li>
+                    <li><a href="./works/index.html">Works</a></li>
+                    <li><a href="./blog/index.html">Blog</a></li>
+                    <li><a href="./contact/index.html">Contact</a></li>
+                </ul>
+
+                <!-- ハンバーガーメニュー -->
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <p>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+            </nav>
+        </header>
+
+        <!-- メイン部分 -->
+        <main id="main" class="main">
+
+            <!-- キービジュアル（時間帯によって背景画像を変える） -->
+            <div id="key-visual" class="key-visual">
+                <div class="title-area">
+                    <h1 class="site-title">菊池悠のポートフォリオサイト</h1>
+                    <!-- 肩書き部分（一定時間ごとにテキストをスライドさせて切り替える） -->
+                    <h2 class="my-title text-animation">
+                        <span>WEBデザイナー</span>
+                        <span>QLIPプログラミングスクール</span>
+                        <span>WEBアプリケーション制作科</span>
+                        <span>徳島文理大学</span>
+                        <span>メディアデザイン学科</span>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- About（プロフィール） -->
+            <section id="about-me" class="about-me">
+                <div class="container">
+                    <div class="prof-area flex">
+                        <img src="./images/prof_img.png" alt="プロフィール写真" class="prof-img">
+                        <div class="prof-text-area">
+                            <h3 class="my-name"><ruby>菊池&nbsp;悠<rp>(</rp><rt>きくち&nbsp;ゆう</rt><rp>)</rp></ruby></h3>
+                            <p>徳島県で育ち、大学と職業訓練を通じてWEBサイトの制作に必要なデザイン技術、コーディング･プログラミング言語などを勉強しました。</p>
+                            <p>当サイトではそれらの技術を活用して制作したコンテンツの紹介や技術のシェアなどをしていきたいと思います。</p>
+
+                            <p>お客様へのホスピタリティを大切にしながらクリエイティブに励んでいく事が私のモットーです。</p>
+                        </div>
+                    </div>
+
+                    <!-- スキル＆ソフト -->
+                    <div class="skill-tool-top">
+                        <!-- コーディングスキル -->
+                        <section class="skill">
+                            <div class="container">
+                                <h3 class="sub-title">Skill</h3>
+                                <ul class="skill-list-top">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Java&nbsp;Script</li>
+                                    <li>PHP</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- 境界線（縦） -->
+                        <div class="vertical-border"></div>
+
+                        <!-- 使用ソフト -->
+                        <section class="Tool">
+                            <div class="container">
+                                <h3 class="sub-title">Tool</h3>
+                                <ul class="tool-list-top">
+                                    <li>Visual&nbsp;Studio&nbsp;Code</li>
+                                    <li>Xampp</li>
+                                    <li>Photoshop</li>
+                                    <li>Illustrator</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                    <a href="./about/index.html" class="more-butn">もっとみる</a>
+
+                </div>
+            </section>
+
+            <!-- Works(成果物) -->
+            <section id="works" class="works">
+                <div class="container">
+                    <h3 class="main-title">Works</h3>
+
+                    <ul class="works-list flex fade">
+
+                        <!-- 成果物カード -->
+                        <li>
+                            <a href="./works/create01" class="works-item">
+                                <img src="./images/works/create01-thumbnail.jpg" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">デザイン</p>
+                                    <p class="works-title">カバー画像のデザイン１</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./works/create02" class="works-item">
+                                <img src="./images/works/create02-thumbnail.jpg" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">デザイン</p>
+                                    <p class="works-title">カバー画像のデザイン２</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./works/create03" class="works-item">
+                                <img src="./images/works/create03-thumbnail.jpg" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">デザイン</p>
+                                    <p class="works-title">カバー画像のデザイン３</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="works-item">
+                                <img src="https://placehold.jp/438x292.png" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">カテゴリー名</p>
+                                    <p class="works-title">作品名作品名作品名作品名</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="works-item">
+                                <img src="https://placehold.jp/438x292.png" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">カテゴリー名</p>
+                                    <p class="works-title">作品名作品名作品名作品名</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="works-item">
+                                <img src="https://placehold.jp/438x292.png" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">カテゴリー名</p>
+                                    <p class="works-title">作品名作品名作品名作品名</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="./works/index.html" class="more-butn">もっとみる</a>
+                </div>
+            </section>
+
+            <!-- ブログ記事一覧 -->
+            <section id="blog" class="blog">
+                <div class="container">
+                    <h3 class="main-title">Blog</h3>
+
+                    <!-- ブログ記事リストをカードで表示 -->
+                    <ul class="blog-list flex fade">
+
+                        <!-- 記事カード -->
+                        <li>
+                            <a href="#" class="blog-post">
+                                <img src="https://placehold.jp/300x200.png" alt="アイキャッチ画像" class="blog-eye-catch">
+                                <div class="blog-detail">
+                                    <p class="blog-category">カテゴリー名</p>
+                                    <time datetime="2023-04-01">2023年04月01日</time>
+
+                                    <p class="blog-title">記事のタイトル</p>
+                                    <p class="blog-overview">ここに概要が入ります。ここに概要が入ります。ここに概要が入ります。</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="blog-post">
+                                <img src="https://placehold.jp/300x200.png" alt="アイキャッチ画像" class="blog-eye-catch">
+                                <div class="blog-detail">
+                                    <p class="blog-category">カテゴリー名</p>
+                                    <time datetime="2023-04-01">2023年04月01日</time>
+
+                                    <p class="blog-title">記事のタイトル</p>
+                                    <p class="blog-overview">ここに概要が入ります。ここに概要が入ります。ここに概要が入ります。</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="blog-post">
+                                <img src="https://placehold.jp/300x200.png" alt="アイキャッチ画像" class="blog-eye-catch">
+                                <div class="blog-detail">
+                                    <p class="blog-category">カテゴリー名</p>
+                                    <time datetime="2023-04-01">2023年04月01日</time>
+
+                                    <p class="blog-title">記事のタイトル</p>
+                                    <p class="blog-overview">ここに概要が入ります。ここに概要が入ります。ここに概要が入ります。</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="blog-post">
+                                <img src="https://placehold.jp/300x200.png" alt="アイキャッチ画像" class="blog-eye-catch">
+                                <div class="blog-detail">
+                                    <p class="blog-category">カテゴリー名</p>
+                                    <time datetime="2023-04-01">2023年04月01日</time>
+
+                                    <p class="blog-title">記事のタイトル</p>
+                                    <p class="blog-overview">ここに概要が入ります。ここに概要が入ります。ここに概要が入ります。</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="./blog/index.html" class="more-butn">もっとみる</a>
+                </div>
+            </section>
+
+            <!-- Contact（お問い合わせフォーム） -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h3 class="main-title">Contact</h3>
+
+                    <p>当サイトの感想やご連絡・ご相談がございましたら下記のフォームをご利用ください。</p>
+
+                    <!-- 入力フォーム -->
+                    <form class="contact-form" action="#" method="post" name="contact-form">
+
+                        <!-- 名前入力欄 -->
+                        <div class="name-area">
+                            <label for="username">お名前</label>
+                            <input type="text" name="username" id="username">
+                        </div>
+
+                        <!-- メールアドレス入力欄 -->
+                        <div class="mail-area">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <!-- お問い合わせ内容入力欄 -->
+                        <div class="message-area">
+                            <label for="message">お問い合わせ内容</label>
+                            <textarea name="message" id="message" cols="100%" rows="15"></textarea>
+                        </div>
+
+                        <input type="submit" class="submit-butn" value="送信" name="submit">
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- フッター -->
+        <footer id="footer" class="footer flex">
+            <!-- 一番上へ戻るボタン （画面固定） -->
+            <div id="pagetop-butn" class="pagetop-butn flex">
+                <span>Top</span>
+            </div>
+
+            <div class="container flex">
+                <a href="./index.html"><img class="logo-img" src="./images/logo.png" alt="サイトロゴ"></a>
+                <nav class="footer-gnav flex">
+                    <ul class="gnav-menu">
+                        <li><a href="./about/index.html">About</a></li>
+                        <li><a href="./works/index.html">Works</a></li>
+                        <li><a href="./blog/index.html">Blog</a></li>
+                        <li><a href="./contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="copyright"><small>&copy;Yuu&nbsp;Kikuchi&nbsp;2023</small></p>
+        </footer>
+    </div>
+
+    <!-- JavaScriptファイルの組み込み -->
+    <script src="./js/main.js"></script>
+    <script src="./js/toppage.js"></script>
+</body>
+</html>

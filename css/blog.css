@@ -1,0 +1,77 @@
+@charset "utf-8";
+.blog .container{
+    padding:0 16px;
+}
+
+/* 記事リスト */
+.blog-list{
+    gap:25px;
+    justify-content: space-around;
+    margin-bottom: 75px;
+}
+
+.blog-list li{
+    list-style-type: none;
+}
+
+/* カードのレイアウト */
+.blog-post{
+    max-width:300px;
+    height: 380px;
+    display:inline-block;
+    text-decoration: none;
+    color:#000;
+    border:1px solid #000000DC;
+    overflow: hidden;
+    box-shadow: 7px 10px 16px #00000034;
+    transition:transform 0.3s;
+}
+
+.blog-post:hover{
+    transform: translate3d(0,-15px,15px);
+}
+
+.blog-eye-catch{
+    border-bottom:1px solid #000000DC;
+}
+
+.blog-detail{
+    padding:6px 24px 20px 12px;
+}
+
+/* カテゴリー名 */
+.blog-category{
+    font-size: 0.7rem;
+    display:inline-block;
+    padding:1px;
+    color:#00B0F0;
+    border:1px solid #00B0F0;
+}
+
+/* 投稿日時 */
+.blog-detail time{
+    text-align:left;
+    float: right;
+}
+
+/* 記事のタイトル */
+.blog-title{
+    margin-top:8px;
+    margin-bottom:16px;
+    font-size:1.2rem;
+    overflow: hidden;
+}
+
+/* --------------------------- */
+/* PC width:1280px以上のレイアウト*/
+/* --------------------------- */
+
+@media screen and (min-width:1280px){
+
+.blog .container{
+    max-width:1285px;
+    margin:0 auto;
+    padding: 5px 0;
+}
+
+}

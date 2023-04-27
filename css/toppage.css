@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* メインタイトルのレイアウト */
+.main-title{
+    margin-top:10px;
+    font-size: 48px;
+}
+
+/* メインビジュアルのレイアウト */
+/* キービジュアル */
+.key-visual{
+    padding-top:55px;
+    height:195px;
+    overflow: hidden;
+    background-color:#000;
+    background-size:cover;
+    background-position:center;
+
+    transition: background-image 0.5s;
+}
+
+/* タイトルエリアのレイアウト */
+.title-area{
+    margin-top: 33px;
+    padding-top:10px;
+    padding-bottom:35px;
+    color:#fff;
+    background-color: #0006;
+    text-align: center;
+}
+
+.site-title{
+    margin:0;
+    font-size:1.5rem;
+}
+
+/* 肩書き */
+.my-title{
+    font-size:1rem;
+    position:relative;
+}
+
+
+.my-title span{
+    position:absolute;
+    right:0;
+    left:0;
+    margin:0 auto;
+}
+
+/* テキストアニメーションの設定 */
+.my-title.text-animation{
+    animation: parapara 6s infinite;
+}
+
+.my-title span:nth-of-type(1){
+    animation: textnone1 60s infinite;
+}
+.my-title span:nth-of-type(2){
+    animation: textnone2 60s infinite;
+}
+.my-title span:nth-of-type(3){
+    animation: textnone3 60s infinite;
+}
+.my-title span:nth-of-type(4){
+    animation: textnone4 60s infinite;
+}
+.my-title span:nth-of-type(5){
+    animation: textnone5 60s infinite;
+}
+
+@keyframes parapara{
+    0%{
+        transform:scale(1,1);
+    }
+    30%{
+        transform:scale(1,1);
+    }
+    65%{
+        transform:scale(0,1);
+    }
+    100%{
+        transform:scale(1,1);
+    }
+}
+@keyframes textnone1 {
+    0%{opacity: 1;}
+    6.5%{opacity:1;}
+    6.6%{opacity: 0;}
+    46.5%{opacity:0;}
+    46.6%{opacity: 1;}
+    56.5%{opacity:1;}
+    56.6%{opacity: 0;}
+    96.5%{opacity: 0;}
+    96.6%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@keyframes textnone2 {
+    0%{opacity: 0;}
+    6.5%{opacity:0;}
+    6.6%{opacity: 1;}
+    16.5%{opacity:1;}
+    16.6%{opacity: 0;}
+    56.5%{opacity:0;}
+    56.6%{opacity: 1;}
+    66.5%{opacity: 1;}
+    66.6%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes textnone3 {
+    0%{opacity: 0;}
+    16.5%{opacity:0;}
+    16.6%{opacity: 1;}
+    26.5%{opacity:1;}
+    26.6%{opacity: 0;}
+    66.5%{opacity: 0;}
+    66.6%{opacity:1;}
+    76.5%{opacity: 1;}
+    76.6%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes textnone4 {
+    0%{opacity: 0;}
+    26.5%{opacity:0;}
+    26.6%{opacity: 1;}
+    36.5%{opacity:1;}
+    36.6%{opacity: 0;}
+    76.5%{opacity: 0;}
+    76.6%{opacity:1;}
+    86.5%{opacity: 1;}
+    86.6%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes textnone5 {
+    0%{opacity: 0;}
+    36.5%{opacity:0;}
+    36.6%{opacity: 1;}
+    46.5%{opacity:1;}
+    46.6%{opacity: 0;}
+    86.5%{opacity: 0;}
+    86.6%{opacity:1;}
+    96.5%{opacity: 1;}
+    96.6%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+/* もっとみるボタンのレイアウト */
+.more-butn{
+    width: 10em;
+    margin:0 auto 65px;
+    padding:5px;
+    color:#fff;
+    background-color: #00B0F0;
+    border-radius: 60px;
+    text-decoration: none;
+    text-align: center;
+    display:block;
+    box-shadow:2px 2px 3px #0008;
+    transform:translate3d(-2px,-2px,2px);
+    transition: transform 0.3s, box-shadow 0.15s;
+}
+
+.more-butn:hover{
+    transform:translate3d(0,0,0);
+    box-shadow:0 0 0 #000f;
+}
+
+/* ページスクロールでコンテンツをふわっと表示させるためのレイアウト */
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:opacity 1.5s,transform 1s;
+}
+/* スクロールでフェードイン（jsと連動） */
+.fade.open{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* aboutのレイアウト（トップページ） */
+/* スキル＆ソフトのレイアウト*/
+
+.skill-tool-top .container{
+    max-width:450px;
+    padding:0;
+    margin-bottom:35px;
+}
+
+.skill-tool-top li{
+    font-size:1.5rem;
+    list-style-type:disc;
+    list-style-position: inside;
+}
+
+.skill-tool-top li::marker{
+    color:#00B0F0;
+}
+
+
+/* --------------------------- */
+/* タブレット width:768px以上のレイアウト*/
+/* --------------------------- */
+
+@media screen and (min-width:768px){
+
+/* aboutのレイアウト（トップページ） */
+/* スキル＆ソフトのレイアウト*/
+.skill-tool-top{
+    margin:0 auto;
+    margin-bottom: 100px;
+    max-width: 740px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.vertical-border{
+    width:1px;
+    background-color:#000000;
+}
+
+}
+
+/* --------------------------- */
+/* PC width:1280px以上のレイアウト*/
+/* --------------------------- */
+
+@media screen and (min-width:1280px){
+
+/* メインビジュアルのレイアウト */
+.key-visual{
+    height: 100vh;
+    display:flex;
+    justify-content: end;
+}
+
+/* タイトルエリアのレイアウト */
+.title-area{
+    align-self: center;
+    padding:25px 40px 60px 80px;
+    margin: 0;
+    clip-path: polygon(0 0,100% 0,100% 100%,80px 100%);
+}
+
+.site-title{
+    font-size: 4rem;
+}
+
+.my-title{
+    font-size:2rem;
+}
+
+}

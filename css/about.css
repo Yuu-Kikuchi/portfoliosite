@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+.about-me .container{
+    padding:0 32px;
+    max-width: 1170px;
+    margin:0 auto;
+}
+
+/* プロフィール欄のレイアウト */
+.prof-area{
+    padding-top:30px;
+    justify-content: center;
+}
+
+.prof-img{
+    border-radius: 100%;
+}
+
+/* プロフィールのテキストエリアのレイアウト */
+.prof-text-area{
+    margin:30px auto;
+}
+
+.my-name{
+    margin:24px auto;
+    font-size:3rem;
+    text-align: center;
+}
+
+.my-name rt,
+.my-name rp{
+    font-size:1rem;
+}
+
+/* スキル＆使用ソフトのレイアウト */
+.skill-tool .container{
+    margin-top: 100px;
+}
+
+.skill-tool ul{
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.skill-tool li{
+    margin-bottom:35px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.skill-tool li h4{
+    font-size: 2rem;
+    margin-bottom:10px;
+}
+
+.skill-tool i{
+    font-size:120px;
+    color:#00B0F0;
+}
+
+/* --------------------------- */
+/* タブレット width:768px以上のレイアウト*/
+/* --------------------------- */
+
+@media screen and (min-width:768px){
+
+.skill-tool ul{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skill-tool i{
+    font-size:100px;
+}
+
+}
+
+
+/* --------------------------- */
+/* PC width:1280px以上のレイアウト*/
+/* --------------------------- */
+
+@media screen and (min-width:1280px){
+
+.my-name{
+    text-align: start;
+}
+
+.prof-area{
+    margin:50px auto;
+}
+
+.prof-text-area{
+    max-width: 560px;
+}
+}

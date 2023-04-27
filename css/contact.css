@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.contact .container{
+    padding:0 26px;
+}
+
+/* 入力フォームのレイアウト */
+
+.contact-form{
+    margin-top: 10px;
+    margin-bottom:65px;
+}
+
+/* 各入力欄 */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea{
+    width:100%;
+    border:1px solid #000000;
+    border-radius: 5px;
+    margin:5px auto;
+    padding: 10px;
+    transition:box-shadow 0.1s,outline 0.1s,border 0.1s;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus{
+    box-shadow: 0 0 10px #00B0F0;
+    outline:none;
+    border:1px solid #00000000;
+}
+
+/* 送信ボタン */
+.submit-butn{
+    margin:0 auto;
+    max-width:150px;
+    background-color: #00B0F0;
+    color:#FFFFFF;
+    border:none;
+    border-radius:5px;
+    padding:10px 40px;
+    text-align: center;
+    display:block;
+    box-shadow:2px 2px 3px #0008;
+    transform:translate3d(-2px,-2px,2px);
+    transition: transform 0.3s, box-shadow 0.15s;
+}
+
+.submit-butn:hover{
+    transform:translate3d(0,0,0);
+    box-shadow:0 0 0 #000f;
+}
+
+
+/* --------------------------- */
+/* タブレット width:768px以上のレイアウト*/
+/* --------------------------- */
+
+.contact .container{
+    max-width: 960px;
+    margin:0 auto;
+}

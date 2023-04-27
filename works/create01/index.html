@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- メタデータ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ビューポート（スマホ版対応） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- サイトのタイトル -->
+    <title>菊池&nbsp;悠のポートフォリオサイト</title>
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+
+    <link rel="stylesheet" href="../../css/works.css">
+
+    <!-- Webフォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- アイコンフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuary用ソース -->
+    <script src="../../js/jquery-3.6.3.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header id="header" class="header flex">
+            <a href="../../index.html"><img class="logo-img" src="../../images/logo.png" alt="サイトロゴ"></a>
+            <nav class="header-gnav">
+
+                <!-- グローバルナビゲーションのメニュー -->
+                <ul class="gnav-menu">
+                    <li><a href="../../about/index.html">About</a></li>
+                    <li><a href="../../works/index.html">Works</a></li>
+                    <li><a href="../../blog/index.html">Blog</a></li>
+                    <li><a href="../../contact/index.html">Contact</a></li>
+                </ul>
+
+                <!-- ハンバーガーメニュー -->
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <p>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+            </nav>
+        </header>
+
+        <!-- メイン部分 -->
+        <main id="main" class="main">
+
+            <!-- Works(成果物) -->
+            <section id="works" class="works-create">
+                <div class="container">
+                    <h3 class="main-title">Works</h3>
+
+                    <div class="create-area">
+                        <h4 class="create-title">カバー画像のデザイン１</h4>
+                        <img src="../../images/works/create01.jpg" alt="Facebookのカバー画像" class="create-image">
+                        <dl class="create-detail">
+                            <dt>作品の概要</dt>
+                            <dd>こちらは職業訓練校で勉強したIllustratorを使って制作したFacebookカバーです。<br>Webアプリケーション制作科で習得するHTMLやCSSなどの技術を簡単に紹介する感じで制作しました。</dd>
+
+                            <dt>工夫した点・改善点</dt>
+                            <dd>背景のHTML・CSSなどの文字は若干透過させ、見出しの色は無難な感じがいいかなあと思って青系の色を使用しました。また、コーヒーのイラストは訓練校のリラックスしやすい雰囲気を表すために配置させていただきました。<br>改善点としては勉強内容の紹介が背景に書いてある文字だけであまりピンと来ない感じになってると思われるため、コーディング中の画面やホームページのデザインカンプなどを載せた方が授業内容を伝えやすくて良かったかなあと思います。</dd>
+
+                            <dt>備考</dt>
+                            <dd>10月頃にPhotoshopやIllustratorでのWebサイト素材の作成の講義の課題で制作したFacebookカバーの1つで、最初に作ったこともあってかあまり凝ったものではありませんが、「パソコンを使う授業が多いこと」や「リラックスがしやすい雰囲気」を私が最も伝えたかった所だったため、力を入れて表現させていただきました。<br>講義の課題としてはこの他にも２つほど作らせていただきましたので、別の記事で紹介していきたいと思います。</dd>
+                        </dl>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- フッター -->
+        <footer id="footer" class="footer flex">
+            <!-- 一番上へ戻るボタン （画面固定） -->
+            <div id="pagetop-butn" class="pagetop-butn flex">
+                <span>Top</span>
+            </div>
+
+            <div class="container flex">
+                <a href="../../index.html"><img class="logo-img" src="../../images/logo.png" alt="サイトロゴ"></a>
+                <nav class="footer-gnav flex">
+                    <ul class="gnav-menu">
+                        <li><a href="../../about/index.html">About</a></li>
+                        <li><a href="../../works/index.html">Works</a></li>
+                        <li><a href="../../blog/index.html">Blog</a></li>
+                        <li><a href="../../contact/index.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="copyright"><small>&copy;Yuu&nbsp;Kikuchi&nbsp;2023</small></p>
+        </footer>
+    </div>
+
+    <!-- JavaScriptファイルの組み込み -->
+    <script src="../../js/main.js"></script>
+</body>
+</html>

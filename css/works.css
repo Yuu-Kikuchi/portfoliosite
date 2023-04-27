@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+.works .container{
+    padding:0 16px;
+}
+
+/* 成果物リストのレイアウト */
+.works-list{
+    gap:30px;
+    justify-content: space-around;
+    margin-bottom:70px;
+}
+
+.works-list li{
+    list-style-type: none;
+}
+
+/* カードのレイアウト */
+.works-item{
+    text-decoration:none;
+    color:#000;
+    display:inline-block;
+    box-shadow: 8px 9px 15px #00000034;
+    overflow: hidden;
+    position:relative;
+    border:1px solid #00000033;
+    overflow: hidden;
+}
+
+.works-eye-catch{
+    transition: transform 0.3s;
+}
+
+.works-item:hover .works-eye-catch{
+    transform: scale(1.1,1.1);
+}
+
+.works-detail{
+    width:100%;
+    padding-top: 6px;
+    padding-bottom:12px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background-color: #FFFFFFDD;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display:flex;
+}
+
+/* カテゴリー名 */
+.works-category{
+    padding:1px;
+    color:#00B0F0;
+    border:1px solid #00B0F0;
+    margin-bottom: 10px;
+    display:inline-block;
+}
+
+/* 作品名 */
+.works-title{
+    clear:both;
+    display:inline-block;
+    padding:5px 15px;
+    background-color: #00B0F05B;
+    border-radius: 5px;
+}
+
+
+/* Worksページ内のレイアウト */
+.works .text-area{
+    max-width:960px;
+    margin:0 auto 35px;
+}
+
+
+/* --------------------------- */
+/* タブレット width:768px以上のレイアウト*/
+/* --------------------------- */
+
+@media screen and (min-width:768px) {
+.works .container{
+    padding:0 30px;
+}
+}
+
+
+/* --------------------------- */
+/* PC width:1280px以上のレイアウト*/
+/* --------------------------- */
+
+@media screen and (min-width:1280px){
+
+.works .container{
+    max-width: 1385px;
+    margin:0 auto;
+    padding:0;
+}
+
+}

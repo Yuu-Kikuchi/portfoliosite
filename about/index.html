@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- メタデータ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ビューポート（スマホ版対応） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- サイトのタイトル -->
+    <title>菊池&nbsp;悠のポートフォリオサイト</title>
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <link rel="stylesheet" href="../css/about.css">
+
+    <!-- Webフォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- アイコンフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuary用ソース -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header id="header" class="header flex">
+            <a href="../"><img class="logo-img" src="../images/logo.png" alt="サイトロゴ"></a>
+            <nav class="header-gnav">
+
+                <!-- グローバルナビゲーションのメニュー -->
+                <ul class="gnav-menu">
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../works/">Works</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+
+                <!-- ハンバーガーメニュー -->
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <p>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+            </nav>
+        </header>
+
+        <!-- メイン部分 -->
+        <main id="main" class="main">
+
+            <!-- About（プロフィール） -->
+            <section id="about-me" class="about-me">
+                <div class="container">
+                    <h1 class="main-title">About</h1>
+                    <div class="prof-area flex">
+                        <img src="../images/prof_img.png" alt="プロフィール写真" class="prof-img">
+                        <div class="prof-text-area">
+                            <h2 class="my-name"><ruby>菊池&nbsp;悠<rp>(</rp><rt>きくち&nbsp;ゆう</rt><rp>)</rp></ruby></h2>
+                            <p>徳島県で育ち、大学と職業訓練を通じてWEBサイトの制作に必要なデザイン技術、コーディング･プログラミング言語などを勉強しました。</p>
+                            <p>当サイトではそれらの技術を活用して制作したコンテンツの紹介や技術のシェアなどをしていきたいと思います。</p>
+
+                            <p>お客様へのホスピタリティを大切にしながらクリエイティブに励んでいく事が私のモットーです。</p>
+                        </div>
+                    </div>
+
+                    <!-- スキル＆ソフト -->
+                    <div class="skill-tool">
+                        <!-- コーディングスキル -->
+                        <section class="skill">
+                            <div class="container">
+                                <h3 class="sub-title">Skill</h3>
+                                <ul class="skill-list flex">
+                                    <li>
+                                        <h4>HTML</h4>
+                                        <i class="fa-brands fa-html5"></i>
+                                    </li>
+                                    <li>
+                                        <h4>CSS</h4>
+                                        <i class="fa-brands fa-css3"></i>
+                                    </li>
+                                    <li>
+                                        <h4>Java&nbsp;Script</h4>
+                                        <i class="fa-brands fa-js"></i>
+                                    </li>
+                                    <li>
+                                        <h4>PHP</h4>
+                                        <i class="fa-brands fa-php"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- 使用ソフト -->
+                        <section class="Tool">
+                            <div class="container">
+                                <h3 class="sub-title">Tool</h3>
+                                <ul class="tool-list flex">
+                                    <li>
+                                        <h4>VS&nbsp;Code</h4>
+                                        <i class="fa-solid fa-code"></i>
+                                    </li>
+                                    <li>
+                                        <h4>Xampp</h4>
+                                        <i class="fa-solid fa-gears"></i>
+                                    </li>
+                                    <li>
+                                        <h4>Photoshop</h4>
+                                        <i class="fa-solid fa-image"></i>
+                                    </li>
+                                    <li>
+                                        <h4>Illustrator</h4>
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- フッター -->
+        <footer id="footer" class="footer flex">
+            <!-- 一番上へ戻るボタン （画面固定） -->
+            <div id="pagetop-butn" class="pagetop-butn flex">
+                <span>Top</span>
+            </div>
+
+            <div class="container flex">
+                <a href="../"><img class="logo-img" src="../images/logo.png" alt="サイトロゴ"></a>
+                <nav class="footer-gnav flex">
+                    <ul class="gnav-menu">
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../works/">Works</a></li>
+                        <li><a href="../contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="copyright"><small>&copy;Yuu&nbsp;Kikuchi&nbsp;2023</small></p>
+        </footer>
+    </div>
+
+    <!-- JavaScriptファイルの組み込み -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- メタデータ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ビューポート（スマホ版対応） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- サイトのタイトル -->
+    <title>菊池&nbsp;悠のポートフォリオサイト</title>
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <link rel="stylesheet" href="../css/works.css">
+
+    <!-- Webフォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- アイコンフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuary用ソース -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header id="header" class="header flex">
+            <a href="../"><img class="logo-img" src="../images/logo.png" alt="サイトロゴ"></a>
+            <nav class="header-gnav">
+
+                <!-- グローバルナビゲーションのメニュー -->
+                <ul class="gnav-menu">
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../works/">Works</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+
+                <!-- ハンバーガーメニュー -->
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <p>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+            </nav>
+        </header>
+
+        <!-- メイン部分 -->
+        <main id="main" class="main">
+
+            <!-- Works(成果物) -->
+            <section id="works" class="works">
+                <div class="container">
+                    <h3 class="main-title">Works</h3>
+
+                    <div class="text-area">
+                        <p>Worksでは職業訓練で学習したスキルを活かして制作したデジタルコンテンツなどの制作物を紹介していきたいと思います。</p>
+                        <p>画像をクリックすると作品の詳細を見ることが出来ます。</p>
+                    </div>
+
+                    <ul class="works-list flex">
+
+                        <!-- 成果物カード -->
+                        <li>
+                            <a href="./create01/" class="works-item">
+                                <img src="../images/works/create01-thumbnail.jpg" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">デザイン</p>
+                                    <p class="works-title">カバー画像のデザイン１</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./create02/" class="works-item">
+                                <img src="../images/works/create02-thumbnail.jpg" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">デザイン</p>
+                                    <p class="works-title">カバー画像のデザイン２</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./create03/" class="works-item">
+                                <img src="../images/works/create03-thumbnail.jpg" alt="アイキャッチ画像" class="works-eye-catch">
+
+                                <!-- カテゴリーと作品名 -->
+                                <div class="works-detail">
+                                    <p class="works-category">デザイン</p>
+                                    <p class="works-title">カバー画像のデザイン３</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- フッター -->
+        <footer id="footer" class="footer flex">
+            <!-- 一番上へ戻るボタン （画面固定） -->
+            <div id="pagetop-butn" class="pagetop-butn flex">
+                <span>Top</span>
+            </div>
+
+            <div class="container flex">
+                <a href="../"><img class="logo-img" src="../images/logo.png" alt="サイトロゴ"></a>
+                <nav class="footer-gnav flex">
+                    <ul class="gnav-menu">
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../works/">Works</a></li>
+                        <li><a href="../contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="copyright"><small>&copy;Yuu&nbsp;Kikuchi&nbsp;2023</small></p>
+        </footer>
+    </div>
+
+    <!-- JavaScriptファイルの組み込み -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

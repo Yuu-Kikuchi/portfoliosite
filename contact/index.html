@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+    <!-- メタデータ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ビューポート（スマホ版対応） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- サイトのタイトル -->
+    <title>菊池&nbsp;悠のポートフォリオサイト</title>
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <!-- Webフォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- アイコンフォント -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jQuary用ソース -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header id="header" class="header flex">
+            <a href="../"><img class="logo-img" src="../images/logo.png" alt="サイトロゴ"></a>
+            <nav class="header-gnav">
+
+                <!-- グローバルナビゲーションのメニュー -->
+                <ul class="gnav-menu">
+                    <li><a href="../about/">About</a></li>
+                    <li><a href="../works/">Works</a></li>
+                    <li><a href="../contact/">Contact</a></li>
+                </ul>
+
+                <!-- ハンバーガーメニュー -->
+                <div id="hamburger-menu" class="hamburger-menu">
+                    <p>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+            </nav>
+        </header>
+
+        <!-- メイン部分 -->
+        <main id="main" class="main">
+
+            <!-- Contact（お問い合わせフォーム） -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h3 class="main-title">Contact</h3>
+
+                    <p>当サイトの感想やご連絡・ご相談がございましたら下記のフォームをご利用ください。</p>
+
+                    <!-- 入力フォーム -->
+                    <form class="contact-form" action="#" method="post" name="contact-form">
+
+                        <!-- 名前入力欄 -->
+                        <div class="name-area">
+                            <label for="username">お名前</label>
+                            <input type="text" name="username" id="username">
+                        </div>
+
+                        <!-- メールアドレス入力欄 -->
+                        <div class="mail-area">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <!-- お問い合わせ内容入力欄 -->
+                        <div class="message-area">
+                            <label for="message">お問い合わせ内容</label>
+                            <textarea name="message" id="message" cols="100%" rows="15"></textarea>
+                        </div>
+
+                        <input type="submit" class="submit-butn" value="送信" name="submit">
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- フッター -->
+        <footer id="footer" class="footer flex">
+            <!-- 一番上へ戻るボタン （画面固定） -->
+            <div id="pagetop-butn" class="pagetop-butn flex">
+                <span>Top</span>
+            </div>
+
+            <div class="container flex">
+                <a href="../"><img class="logo-img" src="../images/logo.png" alt="サイトロゴ"></a>
+                <nav class="footer-gnav flex">
+                    <ul class="gnav-menu">
+                        <li><a href="../about/">About</a></li>
+                        <li><a href="../works/">Works</a></li>
+                        <li><a href="../contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <p class="copyright"><small>&copy;Yuu&nbsp;Kikuchi&nbsp;2023</small></p>
+        </footer>
+    </div>
+
+    <!-- JavaScriptファイルの組み込み -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

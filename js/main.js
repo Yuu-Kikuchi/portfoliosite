@@ -6,11 +6,9 @@
 
 //ハンバーガーメニューを取得
 const ham = document.getElementById("hamburger-menu");
-console.log(ham);
 
 //ヘッダーのグローバルナビゲーションメニューを取得
 const gnavM = document.querySelector(".header-gnav .gnav-menu");
-console.log(gnavM);
 
 //ハンバーガーメニューを押したときの処理
 ham.onclick = function () {
@@ -28,7 +26,6 @@ ham.onclick = function () {
 
 // トップへ戻るボタンを取得
 const pageTop = document.getElementById("pagetop-butn");
-console.log(pageTop);
 
 // クリックしたら一番上までスクロールするイベントを追加
 pageTop.addEventListener("click", scroll_top);

@@ -5,14 +5,12 @@
 //********************************** */
 
 let time = new Date();
-let TimeHours = time.getHours()
-console.log(TimeHours);
+let TimeHours = time.getHours();
 
 let kVisual;
 
 function keyVisual(){
     let kVisual = document.getElementById("key-visual");
-    console.log(kVisual);
 
     if (TimeHours > 5 && TimeHours < 18) {
     kVisual.style.backgroundImage = "url(./images/bg_tokushima_noon.jpg)";
